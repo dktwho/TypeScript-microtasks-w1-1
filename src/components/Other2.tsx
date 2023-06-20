@@ -5,6 +5,8 @@ export const Other2 = () => {
     console.log(`Hello im ${name}`);
   };
 
+  
+
   return (
     <div className="App">
       <button onClick={(event) => onClickHandler("Bob")}>
@@ -16,3 +18,4 @@ export const Other2 = () => {
     </div>
   );
 };
+W
