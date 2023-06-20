@@ -5,7 +5,29 @@ import { NewComponent } from "./components/NewComponent";
 import { Cars } from "./components/Cars";
 import { Other } from "./components/Other";
 import { Other2 } from "./components/Other2";
+import { Button } from "./components/Button";
+
 function App() {
+  const button1Foo = (floor: number, floorInWords: string) => {
+    console.log(
+      `This is floor number ${floor}  | floor in words: ${floorInWords}`
+    );
+  };
+
+  const button2Foo = (floor: number, floorInWords: string) => {
+    console.log(
+      `This is floor number ${floor}  | floor in words: ${floorInWords}`
+    );
+  };
+
+  const button3Foo = (floor: number) => {
+    console.log(`This is floor number ${floor} `);
+  };
+
+  const button4Foo = () => {
+    console.log(`Broken floor`);
+  };
+
   return (
     <div className="App">
       <NewComponent
@@ -25,6 +47,12 @@ function App() {
       <br />
       <hr />
       <Other2 />
+      <hr />
+      <br />
+      <Button name={"Floor N10"} callback={() => button1Foo(10, "ten")} />
+      <Button name={"Floor N9"} callback={() => button2Foo(9, "nine")} />
+      <Button name={"Floor N8"} callback={() => button3Foo(8)} />
+      <Button name={"Floor Broken"} callback={button4Foo} />
     </div>
   );
 }
