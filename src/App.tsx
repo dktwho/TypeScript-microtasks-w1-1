@@ -7,6 +7,7 @@ import { Other } from "./components/Other";
 import { Other2 } from "./components/Other2";
 import { Button } from "./components/Button";
 import { StatePractice } from "./components/StatePractice";
+import { MethodFilter } from "./components/MethodFilter";
 
 function App() {
   const button1Foo = (floor: number, floorInWords: string) => {
@@ -57,6 +58,9 @@ function App() {
       <br />
       <hr />
       <StatePractice />
+      <br />
+      <hr />
+      <MethodFilter />
     </div>
   );
 }
