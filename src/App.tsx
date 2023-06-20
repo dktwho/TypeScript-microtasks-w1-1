@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { NewComponent } from "./components/NewComponent";
 import { Cars } from "./components/Cars";
-
+import { Other } from "./components/Other";
 function App() {
   return (
     <div className="App">
@@ -20,6 +20,7 @@ function App() {
           { manufacturer: "Audi", model: "rs6" },
         ]}
       />
+      <Other />
     </div>
   );
 }
