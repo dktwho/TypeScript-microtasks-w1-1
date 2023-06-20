@@ -6,6 +6,7 @@ import { Cars } from "./components/Cars";
 import { Other } from "./components/Other";
 import { Other2 } from "./components/Other2";
 import { Button } from "./components/Button";
+import { StatePractice } from "./components/StatePractice";
 
 function App() {
   const button1Foo = (floor: number, floorInWords: string) => {
@@ -53,6 +54,9 @@ function App() {
       <Button name={"Floor N9"} callback={() => button2Foo(9, "nine")} />
       <Button name={"Floor N8"} callback={() => button3Foo(8)} />
       <Button name={"Floor Broken"} callback={button4Foo} />
+      <br />
+      <hr />
+      <StatePractice />
     </div>
   );
 }
