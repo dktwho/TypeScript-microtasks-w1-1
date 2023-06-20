@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { NewComponent } from "./components/NewComponent";
+import { Cars } from "./components/Cars";
 
 function App() {
   return (
@@ -10,6 +11,13 @@ function App() {
         students={[
           { id: 1, name: "Bill", age: 25 },
           { id: 2, name: "Bob", age: 35 },
+        ]}
+      />
+      <Cars
+        cars={[
+          { manufacturer: "BMW", model: "m5cs" },
+          { manufacturer: "Mercedes", model: "e63s" },
+          { manufacturer: "Audi", model: "rs6" },
         ]}
       />
     </div>
