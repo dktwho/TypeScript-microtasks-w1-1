@@ -4,6 +4,7 @@ import "./App.css";
 import { NewComponent } from "./components/NewComponent";
 import { Cars } from "./components/Cars";
 import { Other } from "./components/Other";
+import { Other2 } from "./components/Other2";
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,9 @@ function App() {
         ]}
       />
       <Other />
+      <br />
+      <hr />
+      <Other2 />
     </div>
   );
 }
